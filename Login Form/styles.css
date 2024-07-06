@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #741bf2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#image {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#login {
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #8fd0f7;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.heading {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: 0.25rem;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #image, #login {
+        width: 100%;
+    }
+
+    #image {
+        height: 200px;
+    }
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.icons:hover {
+    background-color: #eaff00;
+    color: #ff0000;
+}
+
+.icons i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.icons label {
+    font-weight: bold;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.fa-google {
+    color: #4285F4;
+}
+
+.fa-github {
+    color: #333;
+}
+
+.fa-facebook {
+    color: #1877F2;
+}
+
+a{
+    text-decoration: underline;
+}
