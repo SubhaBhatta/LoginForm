@@ -1,1 +1,35 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login form</title>
+</head>
+<body>
+    <div class="container">
+        <img id="image" src="download.jpg" alt="Login image">
+        <form id="login">
+            <h1>Login</h1>
+            <p>Don't have an account yet? <a href="#">Sign Up</a></p>
+            <div class="form-group">
+                <label for="email" class="heading">Email Address</label>
+                <input type="email" id="email" placeholder="example@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="password" class="heading">Password</label>
+                <input type="password" pattern="^(?=.*[@#])(?=.{9,}).*$" id="password" placeholder="Password should include capital letters,special characters and numbers." required>
+                <a href="#" class="forgot-password" >Forgot Password?</a>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <input type="submit" value="Login">
+            <div class="icons"><i class="fa fa-google"></i><label>Sign in with Google</label></div>
+            <div class="icons"><i class="fa fa-github"></i><label>Sign in with Github</label></div>
+            <div class="icons"><i class="fa fa-facebook"></i><label>Sign in with Facebook</label></div></form>
+    </div>
+</body>
+</html>
